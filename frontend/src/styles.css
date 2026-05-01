@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172033;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.14), transparent 34rem),
+    linear-gradient(135deg, #eef5ff 0%, #f8fafc 45%, #f6f7fb 100%);
+}
+
+a {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+label {
+  display: block;
+  color: #344054;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px 14px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  color: #172033;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 700;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+.auth-page,
+.dashboard-page {
+  min-height: 100vh;
+  padding: 32px 18px;
+}
+
+.auth-page {
+  display: grid;
+  place-items: center;
+}
+
+.auth-panel,
+.dashboard-shell {
+  width: min(100%, 440px);
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(208, 213, 221, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 24px 70px rgba(23, 32, 51, 0.12);
+}
+
+.auth-panel {
+  padding: 30px;
+}
+
+.brand-block {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.brand-mark {
+  display: inline-grid;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 14px;
+  place-items: center;
+  border-radius: 8px;
+  background: #172033;
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.brand-block h1,
+.dashboard-header h1 {
+  margin: 0;
+  color: #111827;
+  font-size: 2rem;
+}
+
+.brand-block p {
+  margin: 8px 0 0;
+  color: #667085;
+  line-height: 1.5;
+}
+
+.auth-panel label + label {
+  margin-top: 16px;
+}
+
+.primary-btn,
+.secondary-btn,
+.danger-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 16px;
+}
+
+.primary-btn {
+  width: 100%;
+  margin-top: 20px;
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.22);
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+}
+
+.secondary-btn {
+  background: #eef2ff;
+  color: #1e40af;
+}
+
+.secondary-btn:hover {
+  background: #dbeafe;
+}
+
+.danger-btn {
+  min-height: 36px;
+  background: #fff1f2;
+  color: #be123c;
+}
+
+.danger-btn:hover {
+  background: #ffe4e6;
+}
+
+.form-switch {
+  margin: 18px 0 0;
+  color: #667085;
+  text-align: center;
+}
+
+.message {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 0.94rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.message.success {
+  border: 1px solid #a7f3d0;
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.message.error {
+  border: 1px solid #fecdd3;
+  background: #fff1f2;
+  color: #be123c;
+}
+
+.dashboard-page {
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-shell {
+  width: min(100%, 820px);
+  min-height: 520px;
+  padding: 28px;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 4px;
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.task-composer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.task-composer .primary-btn {
+  width: auto;
+  margin-top: 0;
+  white-space: nowrap;
+}
+
+.task-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.task,
+.empty-state {
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px;
+}
+
+.task span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 700;
+}
+
+.empty-state {
+  padding: 28px;
+  color: #667085;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .auth-panel,
+  .dashboard-shell {
+    padding: 22px;
+  }
+
+  .dashboard-header,
+  .task,
+  .task-composer {
+    align-items: stretch;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .secondary-btn,
+  .danger-btn,
+  .task-composer .primary-btn {
+    width: 100%;
+  }
+}
