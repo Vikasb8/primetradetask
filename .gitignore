@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+backend/venv/
+backend/db.sqlite3
+
+# Node
+frontend/node_modules/
+frontend/build/
+frontend/.git.local-backup/
+
+# Environment files
+.env
+.env.*
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/
