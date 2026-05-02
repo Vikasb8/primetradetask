@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/primetrade-task/static/css/main.cff33f95.css",
-    "main.js": "/primetrade-task/static/js/main.6115a58b.js",
+    "main.js": "/primetrade-task/static/js/main.fb26a4fd.js",
     "static/js/453.825386d9.chunk.js": "/primetrade-task/static/js/453.825386d9.chunk.js",
     "index.html": "/primetrade-task/index.html",
     "main.cff33f95.css.map": "/primetrade-task/static/css/main.cff33f95.css.map",
-    "main.6115a58b.js.map": "/primetrade-task/static/js/main.6115a58b.js.map",
+    "main.fb26a4fd.js.map": "/primetrade-task/static/js/main.fb26a4fd.js.map",
     "453.825386d9.chunk.js.map": "/primetrade-task/static/js/453.825386d9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cff33f95.css",
-    "static/js/main.6115a58b.js"
+    "static/js/main.fb26a4fd.js"
   ]
 }
